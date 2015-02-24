@@ -67,6 +67,10 @@ int main(int argc, char* argv[]){
 	}while(opcion);
 	cout << "Su porcentaje de aciertos es " << setprecision(2) << (aciertos*100/numero_parejas) << "\%" << endl;
 
+	delete[] palabra;
+	delete[] shuffle_palabras;
+	delete[] juego_palabras;
+	delete[] juego_parejas;
 	for (int i = 0; i < numero_palabras; ++i){
 		delete[] guia[i];
 	}
